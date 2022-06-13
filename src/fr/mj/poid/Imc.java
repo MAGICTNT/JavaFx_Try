@@ -8,14 +8,12 @@ public class Imc {
 	private String imc;
 	private boolean correct;
 
-
 	public Imc(float taille, float poids) {
 		this.taille = taille;
 		this.poids = poids;
 		correct = true;
 		imc = OutilImc.calculeDeLImc(taille,poids);
 	}
-	
 	
 	public boolean isCorrect() {
 		return correct;
@@ -25,13 +23,8 @@ public class Imc {
 		correct = false;
 	}
 
-
 	public String getImc() {
 		return imc;
 	}
 
-
-	
-	
-	
 }
