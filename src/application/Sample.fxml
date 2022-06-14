@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Button fx:id="button" layoutX="106.0" layoutY="270.0" mnemonicParsing="false" onAction="#calculerIMC" prefHeight="53.0" prefWidth="148.0" text="Calculer IMC">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="taille" layoutX="41.0" layoutY="105.0" prefHeight="47.0" prefWidth="291.0" promptText="exemple 180" AnchorPane.topAnchor="105.0" />
+      <TextArea fx:id="poids" layoutX="41.0" layoutY="200.0" prefHeight="37.0" prefWidth="291.0" promptText="exemple 90 ">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></TextArea>
+      <Label layoutX="41.0" layoutY="77.0" prefHeight="28.0" prefWidth="76.0" text="Votre taille:" />
+      <ImageView fx:id="imageView" fitHeight="309.0" fitWidth="155.0" layoutX="406.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="41.0" layoutY="157.0" prefHeight="28.0" prefWidth="65.0" text="Votre poids:" />
+      <Label fx:id="resultat" alignment="CENTER" layoutX="81.0" layoutY="352.0" prefHeight="17.0" prefWidth="211.0" textAlignment="CENTER" />
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="599.0" text="Calcule D'IMC" textAlignment="CENTER" textFill="#d76c6c">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
